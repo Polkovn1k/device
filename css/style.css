@@ -1,0 +1,10 @@
+body {
+	background-color: silver;
+}
+
+div {
+	margin: 0 auto;
+	width: 1440px;
+	height: 4000px;
+	background: black;
+}
