@@ -10,12 +10,10 @@
 	<header class="header">
 		<a class="header__logo">device</a>
 		<nav class="header__nav">
+			<form action="#" class="search">
+				<input type="search" placeholder="Поиск по сайту" class="search__box">
+			</form>
 			<ul class="header__interactive-list">
-				<li class="header__interactive-item">
-					<form action="#" class="search">
-						<input type="search" placeholder="Поиск по сайту" class="search__box">
-					</form>
-				</li>
 				<li class="header__interactive-item">
 					<a href="#" class="header__interactive-link">Войти</a>
 				</li>
@@ -70,7 +68,7 @@
 			<li class="main__crumbs-item"><a href="#">Каталог товаров</a></li>
 			<li class="main__crumbs-item"><a href="#">Моноподы для селфи</a></li>
 		</ul>
-		<section class="goods-filter">
+		<aside class="goods-filter">
 			<div class="goods-filter__title">фильтр:</div>
 			<form action="#" class="goods-filter__form">
 				<fieldset class="goods-filter__price">
@@ -100,20 +98,22 @@
 				</fieldset>
 				<button type="submit" class="goods-filter__button">показать</button>
 			</form>
-		</section>
+		</aside>
 		<section class="goods-sort">
 			<div class="goods-sort__title-block">
 				<b class="goods-sort__title">сортировка:</b>
-				<a class="goods-sort__sort-type goods-sort__sort-type--current">По цене</a>
-				<a href="#" class="goods-sort__sort-type">По типу</a>
-				<a href="#" class="goods-sort__sort-type">По популярности</a>
-				<div class="goods-sort__arrows">
-					<a href="#" class="goods-sort__arrow-direction">Наверх</a>
-					<a class="goods-sort__arrow-direction goods-sort__arrow-direction--current">Вниз</a>
-				</div>
+				<ul class="goods-sort__type-list">
+					<li class="goods-sort__type-item goods-sort__type-item--current"><a>По цене</a></li>
+					<li class="goods-sort__type-item"><a href="#">По типу</a></li>
+					<li class="goods-sort__type-item"><a href="#">По популярности</a></li>
+				</ul>
+				<ul class="goods-sort__arrows">
+					<li class="goods-sort__arrow-direction"><a href="#">Наверх</a></li>
+					<li class="goods-sort__arrow-direction goods-sort__arrow-direction--current"><a>Вниз</a></li>
+				</ul>
 			</div>
 			<div class="goods-sort__main-catalog">
-				<section class="catalog-item">
+				<article class="catalog-item">
 					<div class="catalog-item__img">
 						<img src="#" alt="Любительская селфи-палка">
 					</div>
@@ -121,10 +121,10 @@
 						<a href="#" class="special-link">в корзину</a>
 						<a href="#">Добавить к сравнению</a>
 					</div>
-					<h2 class="catalog-item__title">Любительская селфи-палка</h2>
+					<h1 class="catalog-item__title">Любительская селфи-палка</h1>
 					<span class="catalog-item__price">500 руб.</span>
-				</section>
-				<section class="catalog-item">
+				</article>
+				<article class="catalog-item">
 					<div class="catalog-item__img">
 						<img src="#" alt="Профессиональная селфи-палка">
 					</div>
@@ -132,10 +132,10 @@
 						<a href="#" class="special-link">в корзину</a>
 						<a href="#">Добавить к сравнению</a>
 					</div>
-					<h2 class="catalog-item__title">Профессиональная селфи-палка</h2>
+					<h1 class="catalog-item__title">Профессиональная селфи-палка</h1>
 					<span class="catalog-item__price">1 500 руб.</span>
-				</section>
-				<section class="catalog-item">
+				</article>
+				<article class="catalog-item">
 					<div class="catalog-item__img">
 						<img src="#" alt="Непотопляемая селфи-палка">
 					</div>
@@ -143,10 +143,10 @@
 						<a href="#" class="special-link">в корзину</a>
 						<a href="#">Добавить к сравнению</a>
 					</div>
-					<h2 class="catalog-item__title">Непотопляемая селфи-палка</h2>
+					<h1 class="catalog-item__title">Непотопляемая селфи-палка</h1>
 					<span class="catalog-item__price">2 500 руб.</span>
-				</section>
-				<section class="catalog-item catalog-item--new">
+				</article>
+				<article class="catalog-item catalog-item--new">
 					<div class="catalog-item__img">
 						<img src="#" alt="Селфи-палка «Следуй за мной»">
 					</div>
@@ -154,9 +154,9 @@
 						<a href="#" class="special-link">в корзину</a>
 						<a href="#">Добавить к сравнению</a>
 					</div>
-					<h2 class="catalog-item__title">Селфи-палка «Следуй за мной»</h2>
+					<h1 class="catalog-item__title">Селфи-палка «Следуй за мной»</h1>
 					<span class="catalog-item__price">4 900 руб.</span>
-				</section>
+				</article>
 				<div class="paginator">
 					<a href="" class="paginator__previous">назад</a>
 					<ul class="paginator__number-block">
