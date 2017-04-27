@@ -1,0 +1,82 @@
+/* ----------FONTS */
+@font-face {
+	font-family: "GilroyLight";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/gilroylight.woff2") format("woff2"),
+		 url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "GilroyExtraBold";
+	font-style: normal;
+	font-weight: 800;
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+		 url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "OpenSans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/opensans.woff2") format("woff2"),
+		 url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+	font-family: "OpenSansLight";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/opensanslight.woff2") format("woff2"),
+		 url("../fonts/opensanslight.woff") format("woff");
+}
+
+/* ----------COMMON STYLE */
+.body {
+	width: 100%;
+	background: #ffffff;
+	font-style: normal;
+	font-family: "OpenSans, Arial, sans-serif";
+}
+
+/* ----------HEADER */
+.header {
+	position: relative;
+	
+	margin: 40px auto 0 auto;
+	width: 1160px;
+
+	background-color: #f7e296;
+}
+
+.header__logo {
+	position: absolute;
+}
+
+.header__nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.search {
+	flex-basis: 300px;
+	margin-left: 60px;
+}
+
+.header__interactive-list {
+	flex-basis: 740px;
+	margin-right: 60px;
+}
+
+.header__menu-list {
+	margin-left: 60px;
+	margin-right: 60px;
+	flex-basis: 1040px;
+}
+
+/* ----------MAIN */
+
+/* ----------FOOTER */
