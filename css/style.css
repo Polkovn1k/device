@@ -68,13 +68,21 @@
 
 .header__interactive-list {
 	flex-basis: 740px;
+	margin: 0;
 	margin-right: 60px;
+	padding: 0;
+
+	list-style-type: none;
 }
 
 .header__menu-list {
+	flex-basis: 1040px;
+	margin: 0;
 	margin-left: 60px;
 	margin-right: 60px;
-	flex-basis: 1040px;
+	padding: 0;
+	
+	list-style-type: none;
 }
 
 /* ----------MAIN */

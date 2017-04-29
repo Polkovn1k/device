@@ -10,22 +10,11 @@
 	<header class="header">
 		<a class="header__logo">device</a>
 		<nav class="header__nav">
-			<form action="#" class="search">
-				<input type="search" placeholder="Поиск по сайту" class="search__box">
-			</form>
-			<ul class="header__interactive-list">
-				<li class="header__interactive-item">
-					<a href="#" class="header__interactive-link">Войти</a>
-				</li>
-				<li class="header__interactive-item">
-					<a href="#" class="header__interactive-link">Сравнить</a>
-				</li>
-				<li class="header__interactive-item">
-					<a href="#" class="header__interactive-link">Корзина</a>
-				</li>
-			</ul>
-			<ul class="header__menu-list">
-				<li class="header__menu-item">
+			<div class="header__aside-nav">
+				<form action="#" class="search">
+					<input type="search" placeholder="Поиск по сайту" class="search__box">
+				</form>
+				<div class="header__catalog-menu">
 					<a class="header__menu-link">каталог товаров</a>
 					<ul class="header__catalog-list">
 						<li class="header__catalog-item">
@@ -47,17 +36,33 @@
 							<a href="#" class="header__catalog-link">Квадрокоптеры</a>
 						</li>
 					</ul>
-				</li>
-				<li class="header__menu-item">
-					<a class="header__menu-link">доставка</a>
-				</li>
-				<li class="header__menu-item">
-					<a class="header__menu-link">гарантия</a>
-				</li>
-				<li class="header__menu-item">
-					<a class="header__menu-link">контакты</a>
-				</li>
-			</ul>
+				</div>
+			</div>
+			<div class="header__main-nav">
+				<ul class="header__interactive-list">
+					<li class="header__interactive-item">
+						<a href="#" class="header__interactive-link">Валентин Петухов</a>
+						<a href="#" class="header__interactive-link">Выйти</a>
+					</li>
+					<li class="header__interactive-item">
+						<a href="#" class="header__interactive-link">Сравнить</a>
+					</li>
+					<li class="header__interactive-item">
+						<a href="#" class="header__interactive-link">Корзина</a>
+					</li>
+				</ul>
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a class="header__menu-link">доставка</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link">гарантия</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link">контакты</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
