@@ -15,7 +15,7 @@
 					<input type="search" placeholder="Поиск по сайту" class="search__box">
 				</form>
 				<div class="header__catalog-menu">
-					<a class="header__menu-link">каталог товаров</a>
+					<a href="#" class="header__catalog-menu-link">каталог товаров</a>
 					<ul class="header__catalog-list">
 						<li class="header__catalog-item">
 							<a href="#" class="header__catalog-link">Виртуальная реальность</a>
@@ -52,13 +52,13 @@
 				</ul>
 				<ul class="header__menu-list">
 					<li class="header__menu-item">
-						<a class="header__menu-link">доставка</a>
+						<a href="#" class="header__menu-link">доставка</a>
 					</li>
 					<li class="header__menu-item">
-						<a class="header__menu-link">гарантия</a>
+						<a href="#" class="header__menu-link">гарантия</a>
 					</li>
 					<li class="header__menu-item">
-						<a class="header__menu-link">контакты</a>
+						<a href="#" class="header__menu-link">контакты</a>
 					</li>
 				</ul>
 			</div>
@@ -103,7 +103,7 @@
 					<img src="#" alt="Квадрокоптер">
 				</div>
 				<div class="main-slider__text">
-					<b class="main-slider__title">Порхает как бабочка, жалит как пчела!</b>
+					<h2 class="main-slider__title">Порхает как бабочка, жалит как пчела!</h2>
 					<p class="main-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					<a href="#" class="special-link">подробнее</a>
 					<ul class="main-slider__feature-list">
@@ -116,22 +116,46 @@
 		<section class="catalog">
 			<ul class="catalog__list">
 				<li class="catalog__item">
-					<a href="#" class="catalog__link">Виртуальная реальность</a>
+					<a href="#" class="catalog__link">
+						<div class="catalog__visual">
+							<img src="#" alt="Виртуальная реальность">
+						</div>
+					Виртуальная реальность</a>
 				</li>
 				<li class="catalog__item">
-					<a href="#" class="catalog__link">Моноподы для селфи</a>
+					<a href="#" class="catalog__link">
+						<div class="catalog__visual">
+							<img src="#" alt="Моноподы для селфи">
+						</div>
+					Моноподы для селфи</a>
 				</li>
 				<li class="catalog__item">
-					<a href="#" class="catalog__link">Экшн-камеры</a>
+					<a href="#" class="catalog__link">
+						<div class="catalog__visual">
+							<img src="#" alt="Экшн-камеры">
+						</div>
+					Экшн-камеры</a>
 				</li>
 				<li class="catalog__item">
-					<a href="#" class="catalog__link">Фитнес-браслеты</a>
+					<a href="#" class="catalog__link">
+						<div class="catalog__visual">
+							<img src="#" alt="Фитнес-браслеты">
+						</div>
+					Фитнес-браслеты</a>
 				</li>
 				<li class="catalog__item">
-					<a href="#" class="catalog__link">Умные часы</a>
+					<a href="#" class="catalog__link">
+						<div class="catalog__visual">
+							<img src="#" alt="Умные часы">
+						</div>
+					Умные часы</a>
 				</li>
 				<li class="catalog__item">
-					<a href="#" class="catalog__link">Квадрокоптеры</a>
+					<a href="#" class="catalog__link">
+						<div class="catalog__visual">
+							<img src="#" alt="Квадрокоптеры">
+						</div>
+					Квадрокоптеры</a>
 				</li>
 			</ul>
 		</section>
@@ -183,22 +207,13 @@
 			</section>
 		</div>
 	</main>
-	
+
 	<footer class="footer">
-		<a class="footer__logo">device</a>
-		<nav class="footer__nav">
-			<ul class="footer__interactive-list">
-				<li class="footer__interactive-item">
-					<a href="#" class="footer__interactive-link">Войти</a>
-				</li>
-				<li class="footer__interactive-item">
-					<a href="#" class="footer__interactive-link">Сравнить</a>
-				</li>
-				<li class="footer__interactive-item">
-					<a href="#" class="footer__interactive-link">Корзина</a>
-				</li>
-			</ul>
+		<div class="footer__info">
+			<a class="footer__logo">device</a>
 			<span class="footer__our-address">г. Москва, ул. Строителей, 15</span>
+		</div>
+		<div class="footer__main-menu">
 			<ul class="footer__menu-list">
 				<li class="footer__menu-item">
 					<a class="footer__menu-link">доставка</a>
@@ -210,14 +225,27 @@
 					<a class="footer__menu-link">контакты</a>
 				</li>
 			</ul>
-			<a href="tel:84954959595" class="footer__our-phone">+7 (495) 495-95-95</a>
-		</nav>
-		<div class="social">
+			<div class="social">
 				<a href="#" class="social__box social__box--fb">Мы в Фэйсбуке</a>
 				<a href="#" class="social__box social__box--inst">Мы в Инстаграме</a>
 				<a href="#" class="social__box social__box--twit">Мы в Твиттере</a>
+			</div>
 		</div>
-		<a href="#" class="footer__html-academy">HTML Academy - интерактивные онлайн-курсы</a>
-	</footer>
+		<div class="footer__aside-menu">
+			<ul class="footer__interactive-list">
+				<li class="footer__interactive-item">
+					<a href="#" class="footer__interactive-link">Войти</a>
+				</li>
+				<li class="footer__interactive-item">
+					<a href="#" class="footer__interactive-link">Сравнить</a>
+				</li>
+				<li class="footer__interactive-item">
+					<a href="#" class="footer__interactive-link">Корзина</a>
+				</li>
+			</ul>
+			<a href="tel:84954959595" class="footer__our-phone">+7 (495) 495-95-95</a>
+			<a href="#" class="footer__html-academy">HTML Academy - интерактивные онлайн-курсы</a>
+		</div>
+	</footer>	
 </body>
 </html>
