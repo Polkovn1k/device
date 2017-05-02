@@ -52,6 +52,7 @@
 	padding-right: 60px;
 	padding-top: 33px;
 	width: 1040px;
+	min-height: 153px;
 
 	background-color: rgba(240, 197, 46, 0.5);
 }
@@ -198,7 +199,7 @@
 				}
 
 			.header__catalog-menu {
-
+				position: relative;
 			}
 
 				.header__catalog-menu-link {
@@ -244,21 +245,68 @@
 					transform: rotate(90deg);
 				}
 
-				.header__catalog-list {
+				.header__catalog-list-wrapper {
+					position: absolute;
+					top: 20px;
+					left: -60px;
 					display: none;
+					width: 1160px;
 					margin: 0;
 					padding: 0;
 
-					list-style-type: none;
+					background-color: #f7e296;
 				}
 
-					.header__catalog-item {
+				.header__catalog-menu-link:hover + .header__catalog-list-wrapper,
+				.header__catalog-list-wrapper:hover {
+					display: block;
+					margin: 0;
+					padding: 0;
+				}
 
+					.header__catalog-list {
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						width: 650px;
+						margin: 0;
+						padding: 0;
+						padding-left: 60px;
+						padding-top: 23px;
+						padding-bottom: 34px;
+
+						list-style-type: none;
 					}
 
-					.header__catalog-link {
+						.header__catalog-item {
+							flex-basis: 200px;
+						}
+						
+						.header__catalog-item:first-child,
+						.header__catalog-item:nth-child(4) {
+							margin-right: 39px;
+						}
 
-					}
+						.header__catalog-item:last-child {
+							flex-basis: 100%;
+						}
+
+						.header__catalog-link {
+							font-family: OpenSansLight;
+							font-size: 15px;
+							line-height: 36px;
+							text-decoration: none;
+							letter-spacing: 0.2px;
+							color: #000000;
+						}
+
+						.header__catalog-link:hover {
+							opacity: 0.6;
+						}
+
+						.header__catalog-link:active {
+							opacity: 0.3;
+						}
 
 		.header__main-nav {
 			display: flex;
@@ -270,7 +318,6 @@
 			.header__interactive-list {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
 				flex-basis: 49px;
 				margin: 0;
 				margin-bottom: 32px;
@@ -287,12 +334,11 @@
 				}
 
 				.header__interactive-item:first-child {
-					justify-content: flex-start;
-					flex-basis: 280px;
+					margin-right: auto;
 				}
 
 				.header__interactive-item:last-child {
-					margin-left: 36px;
+					margin-left: 39px;
 				}
 
 					.header__interactive-link {
@@ -356,7 +402,6 @@
 			.header__menu-list {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
 				margin: 0;
 				padding: 0;
 				
@@ -366,11 +411,12 @@
 				.header__menu-item {
 					display: flex;
 					flex-direction: row;
-					align-content: center;					
+					align-content: center;
+					margin-right: 35px;	
 				}
 
 				.header__menu-item:last-child {
-					margin-left: 75px;
+					margin-left: auto;
 					margin-right: -3.5px;
 				}
 
