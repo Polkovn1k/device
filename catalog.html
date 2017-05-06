@@ -69,113 +69,117 @@
 		</nav>
 	</header>
 
-	<main class="main">
+	<main class="main main--catalog">
 		<h1 class="main__title">Моноподы для селфи</h1>
 		<ul class="main__crumbs-list">
 			<li class="main__crumbs-item"><a href="#">Главная</a></li>
 			<li class="main__crumbs-item"><a href="#">Каталог товаров</a></li>
 			<li class="main__crumbs-item"><a>Моноподы для селфи</a></li>
 		</ul>
-		<aside class="goods-filter">
-			<div class="goods-filter__title">фильтр:</div>
-			<form action="#" class="goods-filter__form">
-				<fieldset class="goods-filter__price">
-					<legend class="goods-filter__form-title">Стоимость</legend>
-					<div class="goods-filter__range-line">
-						<div class="goods-filter__range-value"></div>
-						<div class="goods-filter__range-min"></div>
-						<div class="goods-filter__range-max"></div>
-					</div>
-					<div class="goods-filter__current-price">
-						<span>от 0</span>
-						<span>до 5000</span>
-					</div>
-				</fieldset>
-				<fieldset class="goods-filter__color">
-					<legend class="goods-filter__form-title">Цвет</legend>
-					<label class="goods-filter__color-value"><input type="checkbox" checked>Черный</label>
-					<label class="goods-filter__color-value"><input type="checkbox">Белый</label>
-					<label class="goods-filter__color-value"><input type="checkbox" checked>Синий</label>
-					<label class="goods-filter__color-value"><input type="checkbox" checked>Красный</label>
-					<label class="goods-filter__color-value"><input type="checkbox">Розовый</label>
-				</fieldset>
-				<fieldset class="goods-filter__bluetooth">
-					<legend class="goods-filter__form-title">Bluetooth</legend>
-					<label class="goods-filter__bluetooth-select"><input type="radio" checked>Есть</label>
-					<label class="goods-filter__bluetooth-select"><input type="radio">Нет</label>
-				</fieldset>
-				<button type="submit" class="goods-filter__button">показать</button>
-			</form>
-		</aside>
-		<section class="goods-sort">
-			<div class="goods-sort__title-block">
-				<b class="goods-sort__title">сортировка:</b>
-				<ul class="goods-sort__type-list">
-					<li class="goods-sort__type-item goods-sort__type-item--current"><a>По цене</a></li>
-					<li class="goods-sort__type-item"><a href="#">По типу</a></li>
-					<li class="goods-sort__type-item"><a href="#">По популярности</a></li>
+		<div class="main__catalog-titles">
+			<div class="main__filter-title-block">фильтр:</div>
+			<div class="main__sort-title-block">
+				<b class="main__sort-title">сортировка:</b>
+				<ul class="main__sort-type-list">
+					<li class="main__sort-type-item main__sort-type-item--current"><a>По цене</a></li>
+					<li class="main__sort-type-item"><a href="#">По типу</a></li>
+					<li class="main__sort-type-item"><a href="#">По популярности</a></li>
 				</ul>
-				<ul class="goods-sort__arrows">
-					<li class="goods-sort__arrow-direction"><a href="#">Наверх</a></li>
-					<li class="goods-sort__arrow-direction goods-sort__arrow-direction--current"><a>Вниз</a></li>
+				<ul class="main__sort-arrows-list">
+					<li class="main__sort-arrow-direction"><a href="#">Наверх</a</li>
+					<li class="main__sort-arrow-direction main__sort-arrow-direction--current"><a>Вниз</a></li>
 				</ul>
 			</div>
-			<div class="goods-sort__main-catalog">
-				<article class="catalog-item">
-					<div class="catalog-item__img">
-						<img src="#" alt="Любительская селфи-палка">
+		</div>
+		<div class="main__catalog-content">
+			<aside class="goods-filter">
+				<form action="#" class="goods-filter__form">
+					<fieldset class="goods-filter__price">
+						<legend class="goods-filter__form-title">Стоимость</legend>
+						<div class="goods-filter__range-line">
+							<div class="goods-filter__range-value"></div>
+							<div class="goods-filter__range-min"></div>
+							<div class="goods-filter__range-max"></div>
+						</div>
+						<div class="goods-filter__current-price">
+							<span>от 0</span>
+							<span>до 5000</span>
+						</div>
+					</fieldset>
+					<fieldset class="goods-filter__color">
+						<legend class="goods-filter__form-title">Цвет</legend>
+						<label class="goods-filter__color-value"><input type="checkbox" checked>Черный</label>
+						<label class="goods-filter__color-value"><input type="checkbox">Белый</label>
+						<label class="goods-filter__color-value"><input type="checkbox" checked>Синий</label>
+						<label class="goods-filter__color-value"><input type="checkbox" checked>Красный</label>
+						<label class="goods-filter__color-value"><input type="checkbox">Розовый</label>
+					</fieldset>
+					<fieldset class="goods-filter__bluetooth">
+						<legend class="goods-filter__form-title">Bluetooth</legend>
+						<label class="goods-filter__bluetooth-select"><input type="radio" checked>Есть</label>
+						<label class="goods-filter__bluetooth-select"><input type="radio">Нет</label>
+					</fieldset>
+					<button type="submit" class="goods-filter__button">показать</button>
+				</form>
+			</aside>
+			<section class="goods-sort">
+				<div class="goods-sort__main-catalog">
+					<article class="catalog-item">
+						<h1 class="catalog-item__title">Любительская селфи-палка</h1>
+						<span class="catalog-item__price">500 руб.</span>
+						<div class="catalog-item__img">
+							<img src="../device/img/catalog-item/catalog-item__img-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+						</div>
+						<div class="catalog-item__order-block">
+							<a href="#" class="special-link">в корзину</a>
+							<a href="#">Добавить к сравнению</a>
+						</div>
+					</article>
+					<article class="catalog-item">
+						<h1 class="catalog-item__title">Профессиональная <br>селфи-палка</h1>
+						<span class="catalog-item__price">1 500 руб.</span>
+						<div class="catalog-item__img">
+							<img src="../device/img/catalog-item/catalog-item__img-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+						</div>
+						<div class="catalog-item__order-block">
+							<a href="#" class="special-link">в корзину</a>
+							<a href="#">Добавить к сравнению</a>
+						</div>
+					</article>
+					<article class="catalog-item">
+						<h1 class="catalog-item__title">Непотопляемая селфи-палка</h1>
+						<span class="catalog-item__price">2 500 руб.</span>
+						<div class="catalog-item__img">
+							<img src="../device/img/catalog-item/catalog-item__img-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+						</div>
+						<div class="catalog-item__order-block">
+							<a href="#" class="special-link">в корзину</a>
+							<a href="#">Добавить к сравнению</a>
+						</div>
+					</article>
+					<article class="catalog-item catalog-item--new">
+						<h1 class="catalog-item__title">Селфи-палка «Следуй за <br>мной»</h1>
+						<span class="catalog-item__price">4 900 руб.</span>
+						<div class="catalog-item__img">
+							<img src="../device/img/catalog-item/catalog-item__img-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+						</div>
+						<div class="catalog-item__order-block">
+							<a href="#" class="special-link">в корзину</a>
+							<a href="#">Добавить к сравнению</a>
+						</div>
+					</article>
+					<div class="paginator">
+						<a href="" class="paginator__previous">назад</a>
+						<ul class="paginator__number-list">
+							<li class="paginator__number-item paginator__number-item--current"><a href="#">1</a></li>
+							<li class="paginator__number-item"><a href="#">2</a></li>
+							<li class="paginator__number-item"><a href="#">3</a></li>
+						</ul>
+						<a href="" class="paginator__next">вперед</a>
 					</div>
-					<div class="catalog-item__order-block">
-						<a href="#" class="special-link">в корзину</a>
-						<a href="#">Добавить к сравнению</a>
-					</div>
-					<h1 class="catalog-item__title">Любительская селфи-палка</h1>
-					<span class="catalog-item__price">500 руб.</span>
-				</article>
-				<article class="catalog-item">
-					<div class="catalog-item__img">
-						<img src="#" alt="Профессиональная селфи-палка">
-					</div>
-					<div class="catalog-item__order-block">
-						<a href="#" class="special-link">в корзину</a>
-						<a href="#">Добавить к сравнению</a>
-					</div>
-					<h1 class="catalog-item__title">Профессиональная селфи-палка</h1>
-					<span class="catalog-item__price">1 500 руб.</span>
-				</article>
-				<article class="catalog-item">
-					<div class="catalog-item__img">
-						<img src="#" alt="Непотопляемая селфи-палка">
-					</div>
-					<div class="catalog-item__order-block">
-						<a href="#" class="special-link">в корзину</a>
-						<a href="#">Добавить к сравнению</a>
-					</div>
-					<h1 class="catalog-item__title">Непотопляемая селфи-палка</h1>
-					<span class="catalog-item__price">2 500 руб.</span>
-				</article>
-				<article class="catalog-item catalog-item--new">
-					<div class="catalog-item__img">
-						<img src="#" alt="Селфи-палка «Следуй за мной»">
-					</div>
-					<div class="catalog-item__order-block">
-						<a href="#" class="special-link">в корзину</a>
-						<a href="#">Добавить к сравнению</a>
-					</div>
-					<h1 class="catalog-item__title">Селфи-палка «Следуй за мной»</h1>
-					<span class="catalog-item__price">4 900 руб.</span>
-				</article>
-				<div class="paginator">
-					<a href="" class="paginator__previous">назад</a>
-					<ul class="paginator__number-block">
-						<li class="paginator__number paginator__number--current"><a href="#">1</a></li>
-						<li class="paginator__number"><a href="#">2</a></li>
-						<li class="paginator__number"><a href="#">3</a></li>
-					</ul>
-					<a href="" class="paginator__next">вперед</a>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</main>
 	
 	<footer class="footer">
