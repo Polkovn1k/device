@@ -95,7 +95,7 @@
 			<aside class="goods-filter">
 				<form action="#" class="goods-filter__form">
 					<fieldset class="goods-filter__price">
-						<legend class="goods-filter__form-title">Стоимость</legend>
+						<legend class="goods-filter__form-title goods-filter__form-title--price">Стоимость</legend>
 						<div class="goods-filter__range-line">
 							<div class="goods-filter__range-value"></div>
 							<div class="goods-filter__range-min"></div>
@@ -107,17 +107,27 @@
 						</div>
 					</fieldset>
 					<fieldset class="goods-filter__color">
-						<legend class="goods-filter__form-title">Цвет</legend>
-						<label class="goods-filter__color-value"><input type="checkbox" checked>Черный</label>
-						<label class="goods-filter__color-value"><input type="checkbox">Белый</label>
-						<label class="goods-filter__color-value"><input type="checkbox" checked>Синий</label>
-						<label class="goods-filter__color-value"><input type="checkbox" checked>Красный</label>
-						<label class="goods-filter__color-value"><input type="checkbox">Розовый</label>
+						<legend class="goods-filter__form-title goods-filter__form-title--color">Цвет</legend>
+						<input type="checkbox" name="filter-black" id="goods-filter__black" checked>
+						<input type="checkbox" name="filter-white" id="goods-filter__white">
+						<input type="checkbox" name="filter-blue" id="goods-filter__blue" checked>
+						<input type="checkbox" name="filter-red" id="goods-filter__red" checked>
+						<input type="checkbox" name="filter-pink" id="goods-filter__pink">
+						<label for="goods-filter__black" class="goods-filter__color-value goods-filter__color-value--black">Черный</label>
+						<label for="goods-filter__white" class="goods-filter__color-value goods-filter__color-value--white">Белый</label>
+						<label for="goods-filter__blue" class="goods-filter__color-value goods-filter__color-value--blue">Синий</label>
+						<label for="goods-filter__red" class="goods-filter__color-value goods-filter__color-value--red">Красный</label>
+						<label for="goods-filter__pink" class="goods-filter__color-value goods-filter__color-value--pink">Розовый</label>
 					</fieldset>
 					<fieldset class="goods-filter__bluetooth">
-						<legend class="goods-filter__form-title">Bluetooth</legend>
-						<label class="goods-filter__bluetooth-select"><input type="radio" checked>Есть</label>
-						<label class="goods-filter__bluetooth-select"><input type="radio">Нет</label>
+						<legend class="goods-filter__form-title goods-filter__form-title--bluetooth">Bluetooth</legend>
+
+						<input type="radio" name="bluetooth-select" id="goods-filter__on" checked>
+						<input type="radio" name="bluetooth-select" id="goods-filter__off">
+
+
+						<label for="goods-filter__on" class="goods-filter__bluetooth-select goods-filter__bluetooth-select--on">Есть</label>
+						<label for="goods-filter__off" class="goods-filter__bluetooth-select goods-filter__bluetooth-select--off">Нет</label>
 					</fieldset>
 					<button type="submit" class="goods-filter__button">показать</button>
 				</form>
@@ -125,53 +135,53 @@
 			<section class="goods-sort">
 				<div class="goods-sort__main-catalog">
 					<article class="catalog-item">
-						<h1 class="catalog-item__title">Любительская селфи-палка</h1>
+						<h1 class="catalog-item__title"><a href="#">Любительская селфи-палка</a></h1>
 						<span class="catalog-item__price">500 руб.</span>
 						<div class="catalog-item__img">
 							<img src="../device/img/catalog-item/catalog-item__img-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-						</div>
-						<div class="catalog-item__order-block">
-							<a href="#" class="special-link">в корзину</a>
-							<a href="#">Добавить к сравнению</a>
+							<div class="catalog-item__order-block">
+								<a href="#" class="special-link">в корзину</a>
+								<a href="#">Добавить к сравнению</a>
+							</div>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<h1 class="catalog-item__title">Профессиональная <br>селфи-палка</h1>
+						<h1 class="catalog-item__title"><a href="#">Профессиональная <br>селфи-палка</a></h1>
 						<span class="catalog-item__price">1 500 руб.</span>
 						<div class="catalog-item__img">
 							<img src="../device/img/catalog-item/catalog-item__img-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-						</div>
-						<div class="catalog-item__order-block">
-							<a href="#" class="special-link">в корзину</a>
-							<a href="#">Добавить к сравнению</a>
+							<div class="catalog-item__order-block">
+								<a href="#" class="special-link">в корзину</a>
+								<a href="#">Добавить к сравнению</a>
+							</div>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<h1 class="catalog-item__title">Непотопляемая селфи-палка</h1>
+						<h1 class="catalog-item__title"><a href="#">Непотопляемая селфи-палка</a></h1>
 						<span class="catalog-item__price">2 500 руб.</span>
 						<div class="catalog-item__img">
 							<img src="../device/img/catalog-item/catalog-item__img-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-						</div>
-						<div class="catalog-item__order-block">
-							<a href="#" class="special-link">в корзину</a>
-							<a href="#">Добавить к сравнению</a>
+							<div class="catalog-item__order-block">
+								<a href="#" class="special-link">в корзину</a>
+								<a href="#">Добавить к сравнению</a>
+							</div>
 						</div>
 					</article>
-					<article class="catalog-item catalog-item--new">
-						<h1 class="catalog-item__title">Селфи-палка «Следуй за <br>мной»</h1>
+					<article class="catalog-item">
+						<h1 class="catalog-item__title"><a href="#">Селфи-палка «Следуй за <br>мной»</a></h1>
 						<span class="catalog-item__price">4 900 руб.</span>
-						<div class="catalog-item__img">
+						<div class="catalog-item__img catalog-item__img--new">
 							<img src="../device/img/catalog-item/catalog-item__img-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-						</div>
-						<div class="catalog-item__order-block">
-							<a href="#" class="special-link">в корзину</a>
-							<a href="#">Добавить к сравнению</a>
+							<div class="catalog-item__order-block">
+								<a href="#" class="special-link">в корзину</a>
+								<a href="#">Добавить к сравнению</a>
+							</div>
 						</div>
 					</article>
 					<div class="paginator">
-						<a href="" class="paginator__previous">назад</a>
+						<a class="paginator__previous paginator__previous--unavailable">назад</a>
 						<ul class="paginator__number-list">
-							<li class="paginator__number-item paginator__number-item--current"><a href="#">1</a></li>
+							<li class="paginator__number-item paginator__number-item--current"><a>1</a></li>
 							<li class="paginator__number-item"><a href="#">2</a></li>
 							<li class="paginator__number-item"><a href="#">3</a></li>
 						</ul>
@@ -184,7 +194,7 @@
 	
 	<footer class="footer">
 		<div class="footer__info">
-			<a href="index.html" class="footer__logo">device</a>
+			<a href="" class="footer__logo">device</a>
 			<span class="footer__our-address">г. Москва, ул. Строителей, 15</span>
 		</div>
 		<div class="footer__main-menu">
@@ -208,16 +218,16 @@
 		<div class="footer__aside-menu">
 			<ul class="footer__interactive-list">
 				<li class="footer__interactive-item">
-					<a href="#" class="footer__interactive-link">Войти</a>
+					<a href="#" class="footer__interactive-link footer__interactive-link--user">Выйти</a>
 				</li>
 				<li class="footer__interactive-item">
-					<a href="#" class="footer__interactive-link">Сравнить</a>
+					<a href="#" class="footer__interactive-link footer__interactive-link--compare">Сравнить</a>
 				</li>
 				<li class="footer__interactive-item">
-					<a href="#" class="footer__interactive-link">Корзина</a>
+					<a href="#" class="footer__interactive-link footer__interactive-link--cart">Корзина</a>
 				</li>
 			</ul>
-			<a href="tel:84954959595" class="footer__our-phone">+7 (495) 495-95-95</a>
+			<a href="tel:84954959595" class="footer__our-phone">Тел.: +7 (495) 495-95-95</a>
 			<a href="#" class="footer__html-academy">HTML Academy - интерактивные онлайн-курсы</a>
 		</div>
 	</footer>

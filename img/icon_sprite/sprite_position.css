@@ -93,3 +93,9 @@
     height: 195px;
     background-position: -40px -1805px;
 }
+
+.icon_sprite-tick {
+    width: 12px;
+    height: 7px;
+    background-position: -251px 0;
+}
