@@ -99,3 +99,9 @@
     height: 7px;
     background-position: -251px 0;
 }
+
+.icon_sprite-map__close {
+    width: 55px;
+    height: 55px;
+    background-position: 0 -2040px;
+}

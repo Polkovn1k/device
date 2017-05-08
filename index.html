@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Device Layout  |  Главная</title>
 </head>
 <body class="body">
@@ -241,8 +241,7 @@
 				<h2 class="info__title">Контакты</h2>
 				<p class="info__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<div class="info__map">
-					<img src="img/info/info__map.png" alt="Карта" width="560" height="222">
-					<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947375!2d37.52742931614757!3d55.68703400452967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493889161253" width="560" height="222" style="border:0" allowfullscreen></iframe> -->
+					<img src="img/info/info__map.png" alt="Карта" width="560" height="222" class="info__map-link">
 				</div>
 				<a href="mailto:#" class="special-link">напишите нам</a>
 			</section>
@@ -288,5 +287,28 @@
 			<a href="#" class="footer__html-academy">HTML Academy - интерактивные онлайн-курсы</a>
 		</div>
 	</footer>
+	<div class="map">
+		<span class="map__close">Закрыть попап</span>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947375!2d37.52742931614757!3d55.68703400452967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1493889161253" width="960" height="559" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="write-us">
+		<span class="write-us__close">Закрыть попап</span>
+		<form action="#" class="write-us__form">
+			<fieldset class="write-us__name">
+				<legend class="write-us__title">Ваше имя:</legend>
+				<input type="text" placeholder="Представьтесь, пожалуйста" class="write-us__input" required>
+			</fieldset>
+			<fieldset class="write-us__email">
+				<legend class="write-us__title">Ваш e-mail:</legend>
+				<input type="email" placeholder="Для отправки ответа" class="write-us__input" required>
+			</fieldset>
+			<fieldset class="write-us__letter">
+				<legend class="write-us__title">Текст письма:</legend>
+				<textarea name="letter" placeholder="В свободной форме" class="write-us__area" required></textarea>
+			</fieldset>
+			<button type="submit" class="special-link">отправить</button>
+		</form>
+	</div>
+	<script src="js/popups.js"></script>
 </body>
 </html>
