@@ -580,6 +580,10 @@
 				color: #000000;
 			}
 
+			.main-slider__text--03 .main-slider__title {
+				letter-spacing: 0px;
+			}
+
 			.main-slider__description {
 				width: 500px;
 				padding-top: 197px;
@@ -595,12 +599,12 @@
 			.main-slider__labels {
 				display: flex;
 				flex-direction: row;
-				justify-content: flex-end;
+				justify-content: flex-start;
 				margin-bottom: 64px;
 			}
 
 				.main-slider__labels .special-link {
-					margin-right: auto;
+					display: block;
 					padding-left: 43px;
 					padding-right: 43px;
 					height: 40px;
@@ -626,6 +630,7 @@
 				}
 
 				.main-slider__input-label {
+					display: block;
 					align-self: center;
 					box-sizing: border-box;
 					margin-left: 23px;
@@ -636,6 +641,10 @@
 					border: 3px solid rgba(0, 0, 0, 0.3);
 
 					cursor: pointer;
+				}
+
+				.main-slider__input-label:nth-child(2) {
+					margin-left: auto;
 				}
 
 				.main-slider__input-label:last-child {
@@ -1476,7 +1485,8 @@
 
 				.goods-filter__color-value {
 					position: relative;
-
+					
+					display: block;
 					padding-left: 38px;
 
 					font-family: OpenSansLight;
@@ -1536,7 +1546,8 @@
 
 				.goods-filter__bluetooth-select {
 					position: relative;
-
+					
+					display: block;
 					padding-left: 38px;
 
 					font-family: OpenSansLight;
@@ -1614,6 +1625,7 @@
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
+			flex-basis: 760px;
 
 			padding-top: 69px;
 		}
@@ -2056,7 +2068,8 @@
 				}
 
 		.footer__our-phone {
-			margin-left: auto;
+			display: flex;
+			justify-content: flex-end;
 			margin-bottom: 60px;
 
 			font-family: OpenSansLight;
